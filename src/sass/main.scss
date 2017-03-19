@@ -1,0 +1,28 @@
+$primary-color:#123;
+$center-width:500px;
+@mixin hor-center($width:100px){
+	margin:0 auto;
+	width:$width;
+}
+@import "form-1";
+
+div{
+	border:1px solid $primary-color;
+}
+.center{
+	margin:0 auto;
+	width:$center-width;
+}
+.left{
+	position:absolute;
+	left:50%;
+	margin-left:$center-width/2;
+}
+.right{
+	position:absolute;
+	right:50%;
+	margin-right:$center-width/2;
+}
+.r{
+	@include hor-center(200px);
+}
