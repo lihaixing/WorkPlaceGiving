@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* 公共 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 125%;
+  color: #858585;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.h1 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.v-line {
+  height: 1px;
+  width: 8rem;
+  background: #34b1c4;
+  position: relative;
+  left: 50%;
+  margin-left: -4rem;
+  margin-bottom: 2rem;
+}
+
+.star {
+  position: absolute;
+  color: #34b1c4;
+  top: -0.3rem;
+  left: 50%;
+  margin-left: -0.5rem;
+  background: #eef0f1;
+  width: 1rem;
+}
+
+.item-fluid {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* 导航 */
+.box_navbar {
+  border: none;
+  background: transparent;
+}
+.box_navbar.scroll_in {
+  background: rgba(34, 34, 34, 0.95);
+}
+.box_navbar .navbar-brand {
+  font-size: 1.2rem;
+  padding: 0rem 0 0 1rem;
+  font-weight: bold;
+  height: 3.9rem;
+  line-height: 3.9rem;
+  color: #FFF;
+}
+.box_navbar .navbar-brand:hover {
+  color: #CCC;
+}
+.box_navbar .navbar-nav > li > a {
+  height: 3.9rem;
+  line-height: 3.9rem;
+  color: #FFF;
+  padding: 0 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.box_navbar .navbar-nav > li > a:hover {
+  color: #CCC;
+}
+.box_navbar .navbar-btn.btn {
+  padding: 0.5rem 1rem;
+  background: #FFF;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 0.8rem;
+  color: #454545;
+}
+.box_navbar .navbar-btn.btn:hover {
+  color: #FFF;
+  background: transparent;
+}
+.box_navbar .navbar-btn.btn.btn-icon {
+  background: transparent;
+  border: none;
+  color: #FFF;
+}
+.box_navbar .navbar-btn.btn.btn-icon:hover {
+  color: #ccc;
+}
+.box_navbar .navbar-toggle {
+  margin: 1rem 1rem;
+}
+.box_navbar .navbar-collapse {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+.box_navbar .navbar-collapse .navbar-btn {
+  width: 100%;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .box_navbar .navbar-collapse {
+    width: auto;
+  }
+  .box_navbar .navbar-collapse .navbar-btn {
+    width: auto;
+  }
+}
+/* 主体 */
+.box-demo-wrapper {
+  background: #34b1c4;
+}
+.box-demo-wrapper .container {
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
+}
+.box-demo-wrapper .container .box-poster {
+  position: relative;
+  height: 100%;
+}
+.box-demo-wrapper .container .box-poster .h1 {
+  color: #FFF;
+  position: absolute;
+  width: 20rem;
+  top: 10rem;
+  right: 0;
+  margin-top: auto;
+}
+.box-demo-wrapper .container .box-poster .adv {
+  position: absolute;
+}
+.box-demo-wrapper .container .box-poster .adv.clouds {
+  z-index: 2;
+  top: 8.6rem;
+}
+.box-demo-wrapper .container .box-poster .adv.buildings {
+  z-index: 3;
+  top: 12.2rem;
+  left: 3.3rem;
+}
+.box-demo-wrapper .container .box-poster .adv.coin {
+  z-index: 6;
+  top: 8rem;
+  left: 8.7rem;
+}
+.box-demo-wrapper .container .box-poster .adv.earth {
+  z-index: 7;
+  top: 10.5rem;
+  left: 6.5rem;
+}
+.box-demo-wrapper .container .box-poster .adv.land {
+  z-index: 1;
+  top: 17rem;
+}
+.box-demo-wrapper .container .box-poster .adv.trees {
+  z-index: 5;
+  top: 15.7rem;
+  left: 2.5rem;
+}
+.box-demo-wrapper .container .box-poster .adv.homes {
+  z-index: 4;
+  top: 15.2rem;
+  left: 1.8rem;
+}
+.box-demo-wrapper .container .box-form {
+  z-index: 8;
+  background: #FFF;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.box-demo-wrapper .container .box-form .intro {
+  color: #858585;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.box-demo-wrapper .container .box-form form input {
+  height: 2.75rem;
+  width: 90%;
+  margin: auto;
+  border-color: #757575;
+  font-size: 0.8rem;
+}
+.box-demo-wrapper .container .box-form form .btn {
+  padding: 0.8rem 1.5rem;
+  background: #34b1c4;
+  border: 2px solid #34b1c4;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.box-demo-wrapper .container .box-form form .btn:hover {
+  color: #34b1c4;
+  background: transparent;
+}
+
+/* footer */
+.box-footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #2f3539;
+  color: #ddd;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+}
+.box-footer .glyphicon {
+  color: #ff8a8a;
+}
+.box-footer img {
+  width: 1rem;
+  height: 1rem;
+}

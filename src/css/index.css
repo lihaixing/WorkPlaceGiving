@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* 公共 */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +23,7 @@ html {
   position: relative;
   left: 50%;
   margin-left: -4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .star {
@@ -39,6 +41,7 @@ html {
   padding-bottom: 4rem;
 }
 
+/* 导航 */
 .box_navbar {
   border: none;
   background: transparent;
@@ -69,9 +72,25 @@ html {
   color: #CCC;
 }
 .box_navbar .navbar-btn.btn {
-  font-size: 0.7rem;
-  margin: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #FFF;
+  border: 2px solid #FFF;
+  color: #FFF;
   font-weight: bold;
+  margin-top: 0.8rem;
+  color: #454545;
+}
+.box_navbar .navbar-btn.btn:hover {
+  color: #FFF;
+  background: transparent;
+}
+.box_navbar .navbar-btn.btn.btn-icon {
+  background: transparent;
+  border: none;
+  color: #FFF;
+}
+.box_navbar .navbar-btn.btn.btn-icon:hover {
+  color: #ccc;
 }
 .box_navbar .navbar-toggle {
   margin: 1rem 1rem;
@@ -94,6 +113,7 @@ html {
     width: auto;
   }
 }
+/* 首页海报 */
 .box-poster {
   background: url(../img/bg.jpg) no-repeat;
   background-size: 100% 100%;
@@ -115,16 +135,22 @@ html {
   margin-top: 1.5rem;
 }
 .box-poster .container .box-btn .btn {
+  padding: 0.5rem 1rem;
+  background: #FFF;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 0.8rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  background: transparent;
-  color: #FFF;
-}
-.box-poster .container .box-btn .btn:hover {
-  background: #FFF;
   color: #454545;
 }
+.box-poster .container .box-btn .btn:hover {
+  color: #FFF;
+  background: transparent;
+}
 
+/* Features */
 .box-features-wrapper {
   background: #eef0f1;
 }
@@ -169,6 +195,8 @@ html {
 }
 .box-features .main > div {
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
 }
 .box-features .main > div .h-line {
   position: absolute;
@@ -178,6 +206,7 @@ html {
 }
 .box-features .main > div .h-point {
   position: absolute;
+  /* height:100%; */
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
@@ -207,14 +236,14 @@ html {
   margin-right: 6rem;
 }
 .box-features .main > div:nth-child(2n+1) .h-line {
-  right: 0.75rem;
+  right: -0.025rem;
 }
 .box-features .main > div:nth-child(2n+1) .h-point {
-  right: 0.75rem;
+  right: 0;
   margin-right: -0.625rem;
 }
 .box-features .main > div:nth-child(2n+1) .h-triangle {
-  right: 10.5%;
+  right: 9%;
 }
 .box-features .main > div:nth-child(2n) .item-feature .logo {
   left: 1rem;
@@ -223,14 +252,14 @@ html {
   margin-left: 6rem;
 }
 .box-features .main > div:nth-child(2n) .h-line {
-  left: 0.75rem;
+  left: -0.025rem;
 }
 .box-features .main > div:nth-child(2n) .h-point {
-  left: 0.75rem;
+  left: 0;
   margin-left: -0.625rem;
 }
 .box-features .main > div:nth-child(2n) .h-triangle {
-  left: 10.5%;
+  left: 9%;
 }
 
 @media (max-width: 768px) {
@@ -246,6 +275,7 @@ html {
     background: none;
   }
 }
+/* plans */
 .box-plans {
   background: #FFF;
 }
@@ -294,38 +324,50 @@ html {
   line-height: 1.3rem;
 }
 .box-plans .container .row .item-plan .content .btn {
-  margin: 1rem auto 0;
   width: 85%;
-  color: #FFF;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
   background: #16A085;
   border: 2px solid #16A085;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 0.8rem;
 }
 .box-plans .container .row .item-plan .content .btn:hover {
   color: #16A085;
-  background: #FFF;
+  background: transparent;
 }
 .box-plans .container .row > div:nth-child(2) .header {
   background: #dd624e;
 }
 .box-plans .container .row > div:nth-child(2) .content .btn {
+  padding: 0.5rem 1rem;
   background: #dd624e;
   border: 2px solid #dd624e;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 0.8rem;
 }
 .box-plans .container .row > div:nth-child(2) .content .btn:hover {
   color: #dd624e;
+  background: transparent;
 }
 .box-plans .container .row > div:last-child .header {
   background: #34b1c4;
 }
 .box-plans .container .row > div:last-child .content .btn {
+  padding: 0.5rem 1rem;
   background: #34b1c4;
   border: 2px solid #34b1c4;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 0.8rem;
 }
 .box-plans .container .row > div:last-child .content .btn:hover {
   color: #34b1c4;
+  background: transparent;
 }
 
+/* touch */
 .box-touch {
   background: #393f43;
 }
@@ -374,6 +416,7 @@ html {
   background: transparent;
 }
 
+/* footer */
 .box-footer {
   padding-top: 3rem;
   padding-bottom: 3rem;

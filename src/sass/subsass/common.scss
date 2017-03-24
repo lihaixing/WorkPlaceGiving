@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size:125%;
+	color: #858585;
+	font-family: 'Open Sans', sans-serif;
+}
+
+$nav-height:3.9rem;
+$nav-font-size:0.7rem;
+$nav-font-color:#FFF;
+$hover-font-color:#CCC;
+@mixin nav-height(){
+	height: $nav-height;
+	line-height: $nav-height;
+	color:$nav-font-color;
+	&:hover{
+		color:$hover-font-color;
+	}
+}
+// 公共正文字体
+@mixin common-font(){
+	color:#858585;
+	font-size:0.8rem;
+	line-height:1.3rem;
+}
+
+// 公共标题
+.h1{
+	margin-bottom:2rem;
+	font-weight:bold;
+}
+.v-line{
+	height:1px;
+	width:8rem;
+	background:#34b1c4;
+	position:relative;
+	left:50%;
+	margin-left:-4rem;
+	margin-bottom:2rem;
+
+}
+.star{
+	position:absolute;
+	color:#34b1c4;
+	top:-0.3rem;
+	left:50%;
+	margin-left:-0.5rem;
+	background:#eef0f1;
+	width:1rem;
+}
+
+.item-fluid{
+	padding-top:4rem;
+	padding-bottom:4rem;
+}
+
+// 大按钮
+@mixin big-btn($bgcolor){
+	padding:0.8rem 1.5rem;
+	background:$bgcolor;
+	border:2px solid $bgcolor;
+	color:#FFF;
+	font-weight:bold;
+	margin-top:1rem;
+	&:hover{
+		color:$bgcolor;
+		background:transparent;
+	}
+}
+
+// 中按钮
+@mixin mid-btn($bgcolor){
+	padding:0.5rem 1rem;
+	background:$bgcolor;
+	border:2px solid $bgcolor;
+	color:#FFF;
+	font-weight:bold;
+	margin-top:0.8rem;
+	&:hover{
+		color:$bgcolor;
+		background:transparent;
+	}
+}
+
+// 登录注册按钮
+@mixin login-btn($bgcolor){
+	background:$bgcolor;
+	color:#FFF;
+	font-weight:500;
+	box-sizing: border-box;
+	width: 88px;
+	height: 36px;
+	&:hover{
+		opacity:0.4;
+	}
+}
+
+// 登录注册输入框
+@mixin login-input(){
+	border:none;
+	border-bottom:1px solid #ccc;
+	box-shadow:none;
+	border-radius:0;
+	&:focus{
+		border-color:rgb(0, 188, 212);
+		border-width:2px;
+	}
+}
+

@@ -1,0 +1,16 @@
+/* 公共 */
+@import "./subsass/common";
+
+body{
+	background:url(../img/bg.jpg) no-repeat;
+}
+.container-fluid{
+	padding:0;
+	@import "./subsass/form";
+}
+
+@media (max-width:400px) {
+	.container-fluid .box-form{
+		width:100%;
+	}
+}

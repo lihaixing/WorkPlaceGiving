@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* 公共 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 125%;
+  color: #858585;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.h1 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.v-line {
+  height: 1px;
+  width: 8rem;
+  background: #34b1c4;
+  position: relative;
+  left: 50%;
+  margin-left: -4rem;
+  margin-bottom: 2rem;
+}
+
+.star {
+  position: absolute;
+  color: #34b1c4;
+  top: -0.3rem;
+  left: 50%;
+  margin-left: -0.5rem;
+  background: #eef0f1;
+  width: 1rem;
+}
+
+.item-fluid {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+body {
+  background: url(../img/bg.jpg) no-repeat;
+}
+
+.container-fluid {
+  padding: 0;
+}
+.container-fluid .box-form {
+  width: 400px;
+  background: #FFF;
+  margin: 10% auto 0;
+  padding-bottom: 1rem;
+}
+.container-fluid .box-form .h1 {
+  font-weight: 200;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+.container-fluid .box-form form {
+  margin: 0 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+.container-fluid .box-form form .form-group {
+  width: 80%;
+}
+.container-fluid .box-form form .form-group input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  border-radius: 0;
+}
+.container-fluid .box-form form .form-group input:focus {
+  border-color: #00bcd4;
+  border-width: 2px;
+}
+.container-fluid .box-form form .btn {
+  background: #00bcd4;
+  color: #FFF;
+  font-weight: 500;
+  box-sizing: border-box;
+  width: 88px;
+  height: 36px;
+}
+.container-fluid .box-form form .btn:hover {
+  opacity: 0.4;
+}
+.container-fluid .box-form .notice {
+  width: 90%;
+  margin: 1rem auto;
+}
+.container-fluid .box-form .box-btn {
+  width: 90%;
+  margin: 0 auto;
+}
+.container-fluid .box-form .box-btn .btn-login {
+  background: #ff4081;
+  color: #FFF;
+  font-weight: 500;
+  box-sizing: border-box;
+  width: 88px;
+  height: 36px;
+}
+.container-fluid .box-form .box-btn .btn-login:hover {
+  opacity: 0.4;
+}
+
+@media (max-width: 400px) {
+  .container-fluid .box-form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+/* 公共 */
+@import "./subsass/common";
+
+html{
+	height:100%;
+}
+body{
+	height:100%;
+}
+.container-fluid{
+	padding:0;
+	@import "./subsass/form";
+	.box-form{
+		height:100%;
+		margin-top:0;
+		border-left:1px solid #CCC;
+		box-shadow:0px 1px 6px rgba(0, 0, 0, 0.12);
+		form{
+			.form-group{
+				width:100%;
+			}
+		}
+	}
+}
+
+@media (max-width:400px) {
+	.container-fluid .box-form{
+		width:100%;
+	}
+}
